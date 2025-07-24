@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallpaper Gallery</title>
+  <link href="menu2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="particles-js"></div>
+  <header class="navbar">
+    <ul class="top-menu">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li>
+        <a href="#">CONNECT US ▾</a>
+        <ul class="submenu">
+          <li><a href="#">TELEGRAM</a></li>
+          <li><a href="#">YOUTUBE</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <div class="main-content">
+   <h2 class="title" data-aos="fade-up">WALLPAPER</h2>
+
+    <div class="gallery"  data-aos="fade-up">
+      <div class="gstyle" data-aos="zoom-in" data-aos-delay="100">
+        <a href="images/SPIDER.jpg">
+          <img src="images/SPIDER.jpg" alt="SPIDER">
+        </a>
+        <p class="pstyle">00A</p>
+      </div>
+
+      <div class="gstyle" data-aos="zoom-in" data-aos-delay="300">
+        <a href="images/MY NEGHBOR TOTORO.jpg">
+          <img src="images/MY NEGHBOR TOTORO.jpg" alt="Totoro">
+        </a>
+        <p class="pstyle">00B</p>
+      </div>
+
+      <div class="gstyle" data-aos="zoom-in" data-aos-delay="500">
+        <a href="images/ART.jpg">
+          <img src="images/ART.jpg" alt="Art">
+        </a>
+        <p class="pstyle">00C</p>
+      </div>
+
+      <div class="gstyle" data-aos="zoom-in" data-aos-delay="700">
+        <a href="images/wallhaven-21klj6_1920x1080.png">
+          <img src="images/wallhaven-21klj6_1920x1080.png" alt="Wallpaper">
+        </a>
+        <p class="pstyle">00D</p>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 70, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.4, random: true },
+    size: { value: 3, random: true },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 1.6, direction: "none" }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" },
+      resize: true
+    },
+    modes: {
+      repulse: { distance: 100, duration: 0.4 },
+      push: { particles_nb: 4 }
+    }
+  },
+  retina_detect: true
+});
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+	
+</html>
